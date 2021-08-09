@@ -1,0 +1,37 @@
+<!--pages/banner/banner.wxml-->
+<view class="bg">
+  <!-- 图片展示 -->
+  <scroll-view scroll-x="true">
+    <view class="uploadWrap" scroll-x="true">
+      <view class="upload_Item">
+        <image class="upload_Item_img" src="../../utils/image/1.png"></image>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- tip -->
+  <view class="tip">
+    <text class="small">正品保障</text>
+    <text class="small">品牌保障</text>
+    <text class="small">售后无忧</text>
+    <text class="small">厂家直销</text>
+  </view>
+  <!-- 新品上市 -->
+  <view class="new">
+    <view class="new-title">
+      <text class="new-left">新品上市</text>
+      <image class="new-right" bindtap="upNew" src="../../utils/image/up.png"></image>
+    </view>
+    <!-- 产品展示 -->
+    <view class="product">
+      <block wx:for="{{list}}" wx:for-index="idx" wx:for-item="itemList" wx:key="id">
+          <view class="item"  bindtap="toDetail" data-id='{{list[idx].tranceId}}'>
+            <image class="img" src="https://www.fjht.store/{{itemList.imgUrl}}"></image>
+            <text class="name">{{itemList.shopName}}</text>
+          </view>
+     </block>
+      <view class="noData" wx:if="{{noData}}">暂无数据,请上传资料</view>
+      <view class="more"  bindtap="getNewIndex">换一批</view>
+    </view>
+   
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<view class="bg">
+  <view class="title big">{{title}}</view>
+  <block wx:for="{{images}}" wx:key="id" wx:for-item="itemList">
+    <image class="weui-uploader__img" src=https://www.fjht.store/{{itemList.imgUrl}}" bindtap="preview" data-src="https://www.fjht.store/{{itemList.imgUrl}}" />
+  </block>
+</view>

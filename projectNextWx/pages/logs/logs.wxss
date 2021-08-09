@@ -1,0 +1,38 @@
+.name{
+  font-size: 60rpx;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+.info{
+  height: 80rpx;
+  line-height: 80rpx;
+  position: relative;
+}
+.info .icon{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+.info .des{
+ position: absolute;
+ margin-left: 20rpx;
+ margin-top: 5rpx;
+}
+.wx{
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+.wx .des{
+  margin-bottom: 20rpx;
+ }
+.wx .icon{
+  width: 200rpx;
+  height: 200rpx;
+  margin-left: 10rpx;
+}
+.wx .nav{
+  width: 90%;
+  height: 400rpx;
+}

@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/banner/banner",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/upData/upData",
+    "pages/detail/detail",
+    "pages/login/login"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "风居皇庭",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "utils/image/main-select.png",
+        "iconPath": "utils/image/main.png",
+        "pagePath": "pages/banner/banner",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "utils/image/type-select.png",
+        "iconPath": "utils/image/type.png",
+        "pagePath": "pages/index/index",
+        "text": "分类"
+      },
+      {
+        "selectedIconPath": "utils/image/our-select.png",
+        "iconPath": "utils/image/our.png",
+        "pagePath": "pages/logs/logs",
+        "text": "关于我们"
+      }
+    ]
+  }
+}

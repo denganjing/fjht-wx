@@ -1,0 +1,7 @@
+
+.delete-btn{
+  position: absolute;
+}
+.selectStyle{
+  padding-left: 0;
+}

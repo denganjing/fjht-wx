@@ -1,0 +1,19 @@
+<view class="name">风居皇庭纺织</view>
+<view class="info">
+  <image bindtap="" class="icon" src="../../utils/image/iphone.png" mode="cover"  bindtap="callPhone"></image>
+  <text class="des">吴桃红   15068539358</text>
+</view>
+<view class="info">
+  <image bindtap="" class="icon" src="../../utils/image/adt.png" mode="cover"></image>
+  <text class="des">浙江绍兴市柯桥区北联市场3-3-3536</text>
+</view>
+<view class="wx">
+  <view class="des">客服微信</view>
+  <image bindtap="" class="icon" src="../../utils/image/wx1.jpg" mode="cover"></image>
+  <image bindtap="" class="icon" src="../../utils/image/wx2.jpg" mode="cover"></image>
+  <image bindtap="" class="icon" src="../../utils/image/wx3.jpg" mode="cover"></image>
+</view>
+<view class="wx">
+  <view class="des">导航地址</view>
+  <image class="nav" bindtap="nav"  src="../../utils/image/nav.png" mode="cover"></image>
+</view>

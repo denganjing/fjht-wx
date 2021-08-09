@@ -1,0 +1,52 @@
+<mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
+<view class="page">
+  <view class="page__bd">
+    <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+      <mp-cells>
+        <mp-cell prop="商品类型" title="商品类型" ext-class="">
+          <picker bindchange="bindCountryChange" value="{{countries[countryIndex].id}}" range="{{list}}">
+            <view class="weui-select weui-select_in-select-after selectStyle">{{countries[countryIndex].typeName}}</view>
+          </picker>
+        </mp-cell>
+        <mp-cell prop="商品名称" title="商品名称" ext-class="">
+          <input bindinput="bindKeyInput"  value="{{inputValue}}" class="weui-input" placeholder="请输入商品名称" />
+        </mp-cell>
+        <mp-cell prop="展示新品" title="展示新品" ext-class="">
+          <view class="weui-cell__bd"></view>
+          <switch checked="{{switch1Checked}}" bindchange="switch1Change" />
+        </mp-cell>
+        <!-- 上传图片 -->
+          <view class="page__bd">
+            <view class="weui-cells">
+              <view class="weui-cell">
+                <view class="weui-cell__bd">
+                  <view class="weui-uploader">
+                    <view class="weui-uploader__hd">
+                      <view class="weui-uploader__title">图片上传 （{{images.length}}/9）</view>
+                    </view>
+                    <view class="weui-uploader__bd">
+                      <view class="weui-uploader__files" id="uploaderFiles">
+                        <block wx:for="{{images}}" wx:key="*this">
+                          <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                            <icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+                            <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                          </view>
+                        </block>
+                      </view>
+                      <view class="weui-uploader__input-box">
+                        <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+      </mp-cells>
+    </mp-form>
+
+    <view class="weui-btn-area">
+      <button class="weui-btn" type="primary" bindtap="submitForm" disabled="{{disabled}}">确定</button>
+    </view>
+  </view>
+</view>

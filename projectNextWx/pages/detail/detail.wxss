@@ -1,0 +1,14 @@
+.weui-uploader__img{
+  height: 500rpx;
+  margin-bottom: 10rpx;
+}
+.title{
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  text-align: center;
+}
+.big{
+  font-weight: bold;
+  font-size: 40rpx;
+}
